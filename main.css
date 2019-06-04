@@ -1,0 +1,193 @@
+
+.wrap {
+    width: 100%;
+}
+
+.top {
+    height: 300px;
+    width: 100%;
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bottom {
+    height: 600px;
+    background-color: #F8F9FA;
+}
+
+.navbar-custom {
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+    background: linear-gradient(to right, #021B79, #0575E6); 
+    border-bottom: 1px solid black;
+
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: white!important;
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: white!important;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff!important;
+}
+
+.main-calc {
+    position: relative;
+    -webkit-box-shadow: 4px 6px 19px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 6px 19px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 6px 19px 0px rgba(0,0,0,0.75);
+    z-index: 1;
+    top: -370px;
+    height: auto;
+    overflow: hidden;
+    background-color: white;
+}
+
+.flex1 {
+    display: flex;
+}
+
+@media screen and (max-width: 398px) {
+.left-calc {
+    padding: 0!important;
+}
+
+}
+
+@media screen and (max-width: 576px) {
+.main-calc {
+    top: 40px;
+}
+
+}
+@media screen and (min-width: 768px) {
+#rechner {
+    margin-top: 20px;    
+}
+}
+
+@media screen and (max-width: 768px) {
+.main-calc {
+    top: 40px;
+}
+
+
+.container {
+    max-width: 100%!important;
+}
+}
+
+.top-calc {
+    height: 200px;
+    width: 100%;
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+
+}
+
+
+.right-calc {
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+
+}
+
+.result {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.result .number {
+    font-weight: 700;
+    font-size: 20px;
+    
+}
+
+.result .abzug {
+    display: block;
+    color: red;
+}
+
+.result .currency {
+    font-size: 20px;
+}
+
+.left-calc {
+    margin-top: 20px;
+}
+
+.top-calc-tabs {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.calc-tabs {
+    z-index: 2;
+    height: 50px;
+    text-align: center;
+    background: #F5F5F5;
+    padding: 0!important;
+    width: 100%;
+    margin-top: -20px;
+}
+
+.calc-tabs span {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    padding: 5px 10px;
+    color: #c0c0c0;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.calc-tabs .active {
+    border-bottom: 2px solid #3ED6AC;
+    color: #3ED6AC;
+
+}
+
+
+#hidden1 {
+    display: none;
+    animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+#rechner {
+}
+
+.calc-link {
+    margin-top: -5px;
+    line-height: 1!important;
+    font-size: 11px;
+}
+
+#form_salary_brutto {
+    justify-content: center;
+}

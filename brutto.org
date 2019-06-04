@@ -1,0 +1,20 @@
+** Brutto-netto Rechner
+   Description: Simple Website that with a calculator to calculate your effective
+   income. 
+** Features
+   - Mobile Theme as Boostrap and App
+   - SEO
+
+** TODOS 
+
+** TODO add calculator functionality 
+
+** TODO fix basic structur /fast extended
+** TODO fix header and navbar [/] [%]
+   [ ] Background-color
+   [ ] Navbar on left + javascript (nice menu)
+   [ ] hide navbarlogo on mobile or different header
+   [ ] 
+** TODO add buttons for detailed and plain calculator
+
+** TODO on mobile hide buttons and add them underneath

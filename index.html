@@ -96,7 +96,7 @@
 <i class="fa fa-info fs18" title="Altersvorsorge"></i>
 </a>
 </span>
-<input step="0.01" min="1" type="number" name="salary_data[bav_brutto]" value="" class="form-control" id="salary_data_bav_brutto">
+<input type="number" step="0.01" min="1" name="salary_data[bav_brutto]" class="form-control" id="salary_data_bav_brutto">
 <span class="input-group-addon">€/mtl.</span>
 </div>
 </div>
@@ -363,7 +363,6 @@ Geldwerter Vorteil
     }
     }
 
-
     let result = document.getElementById('result');
     let abzug = document.getElementById('abzug');
     let brutto = document.getElementById('salary');
@@ -375,14 +374,15 @@ Geldwerter Vorteil
     let kassensatz = document.getElementById('kasse').value;
     console.log(kassensatz);
 
-    let brutton = numberWithCommas(brutto1);
-    result.innerHTML = brutton + " €";
-    abzug.innerHTML = "-" + lohnsteuer + " €";
+    result.innerHTML = formatcurrency(brutto1);
+    abzug.innerHTML = "-" + formatcurrency(lohnsteuer);
 
-    function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-}
+
+    function formatcurrency(inputnumber){
+     inputnumber = parseFloat(inputnumber).toFixed(2).toString().replace(/[.]/,",") + " €";
+     return inputnumber;
     }
+   }
 
 
  function fast(element) {

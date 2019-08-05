@@ -1,5 +1,8 @@
+
+
 function calculateTotal(){
 
+    let steuerjahr = 0;
     let brutto1 = 0.00;
     var lohnsteuer = 0.00;
     var lohnstclass = document.getElementById('taxclass').value;
@@ -8,7 +11,7 @@ function calculateTotal(){
 
 
         if (brutto * 12 >= 9636 && lohnstclass < 5){
-            lohnsteuer = 132.00
+            lohnsteuer = 132.00;
         }
     }
 
@@ -32,3 +35,4 @@ function calculateTotal(){
         return inputnumber;
     }
 }
+
